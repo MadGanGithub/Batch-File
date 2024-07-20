@@ -8,7 +8,24 @@ pause
 echo 2)Backend part
 mkdir backend
 cd backend
-start /wait cmd /c "npm i dotenv express jsonwebtoken body-parser bcrypt cookie-parser mongoose uuid cors cross-env"npm i nodemon --save-dev
+(
+echo {
+echo   "name": "backend",
+echo   "version": "1.0.0",
+echo   "description": "Backend part",
+echo   "main": "index.js",
+echo   "type": "module",
+echo   "dependencies": {},
+echo   "devDependencies": {},
+echo   "scripts": {
+echo     "start": "nodejs index.js"
+echo   },
+echo   "author": "Madhav",
+echo   "license": "ISC"
+echo }
+) > package.json
+start /wait cmd /c "npm i dotenv express jsonwebtoken body-parser bcrypt cookie-parser mongoose uuid cors cross-env"
+start /wait cmd /c "npm i nodemon --save-dev"
 echo Backend dependencies installed successfully
 echo Press any key to continue....
 pause
