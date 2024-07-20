@@ -18,7 +18,7 @@ echo   "type": "module",
 echo   "dependencies": {},
 echo   "devDependencies": {},
 echo   "scripts": {
-echo     "start": "nodejs index.js"
+echo     "start": "node index.js"
 echo   },
 echo   "author": "Madhav",
 echo   "license": "ISC"
