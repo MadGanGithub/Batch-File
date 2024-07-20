@@ -32,7 +32,7 @@ pause
 echo 3)Folder structure
 echo Index file creation
 type nul > index.js
-echo const app = require("./app.js"); >> index.js
+echo import app from "./app.js"; >> index.js
 echo. >> index.js
 echo app.listen(4000, ()=^>{ >> index.js
 echo     console.log("Started at port: 4000"); >> index.js
